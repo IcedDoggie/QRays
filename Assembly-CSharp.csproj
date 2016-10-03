@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{007D73F9-3A7B-606E-DF47-3E42C18FDB59}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_4_0;UNITY_5_4;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EDITOR_RETINA;ENABLE_RETINA_GUISTYLES;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\GoogleVR\Legacy\Scripts\GvrHead.cs" />
+     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\GvrCameraUtils.cs" />
+     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\GvrEye.cs" />
+     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\GvrPostRender.cs" />
+     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\GvrPreRender.cs" />
+     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\GvrProfile.cs" />
+     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\StereoController.cs" />
+     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\StereoRenderEffect.cs" />
+     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\VRDevices\AndroidDevice.cs" />
+     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\VRDevices\BaseAndroidDevice.cs" />
+     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\VRDevices\BaseVRDevice.cs" />
+     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\VRDevices\EditorDevice.cs" />
+     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\VRDevices\GvrDevice.cs" />
+     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\VRDevices\iOSDevice.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Audio\GvrAudio.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Audio\GvrAudioListener.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Audio\GvrAudioRoom.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Audio\GvrAudioSoundfield.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Audio\GvrAudioSource.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Controller\GvrController.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerProviderFactory.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerProviders\AndroidNativeControllerProvider.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerProviders\DummyControllerProvider.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerProviders\EmulatorControllerProvider.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerState.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\Emulator\EmulatorClientSocket.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\Emulator\EmulatorConfig.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\Emulator\EmulatorDataTypes.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\Emulator\EmulatorManager.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\Emulator\PhoneEvent.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\IControllerProvider.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\GazeInputModule.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\GvrViewer.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Pose3D.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\UI\GvrGaze.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\UI\GvrReticle.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\UI\IGvrGazePointer.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\UI\IGvrGazeResponder.cs" />
+     <Compile Include="Assets\Scripts\Collision_\BeamCollision.cs" />
+     <Compile Include="Assets\Scripts\Collision_\RemoveStuffOuttaBounds.cs" />
+     <Compile Include="Assets\Scripts\Collision_\YouLoseIfEnemyHitsThis.cs" />
+     <Compile Include="Assets\Scripts\EnemyBehaviors\BossMover.cs" />
+     <Compile Include="Assets\Scripts\EnemyBehaviors\EnemyMover.cs" />
+     <Compile Include="Assets\Scripts\EnemyBehaviors\EnemySpawner.cs" />
+     <Compile Include="Assets\Scripts\GameController.cs" />
+     <Compile Include="Assets\Scripts\GameMenuController.cs" />
+     <Compile Include="Assets\Scripts\Item\Item.cs" />
+     <Compile Include="Assets\Scripts\Item\ItemSpawner.cs" />
+     <Compile Include="Assets\Scripts\LaserShot.cs" />
+     <Compile Include="Assets\_ImportedPackage\BasicBeamShot\Character Controllers\Sources\Scripts\MouseLook.cs" />
+     <Compile Include="Assets\_ImportedPackage\BasicBeamShot\SampleStage\GetUI.cs" />
+     <Compile Include="Assets\_ImportedPackage\BasicBeamShot\Script\AutoDestroy.cs" />
+     <Compile Include="Assets\_ImportedPackage\BasicBeamShot\Script\BM_WaveEffect.cs" />
+     <Compile Include="Assets\_ImportedPackage\BasicBeamShot\Script\BasicBullet.cs" />
+     <Compile Include="Assets\_ImportedPackage\BasicBeamShot\Script\BeamLine.cs" />
+     <Compile Include="Assets\_ImportedPackage\BasicBeamShot\Script\BeamParam.cs" />
+     <Compile Include="Assets\_ImportedPackage\BasicBeamShot\Script\BeamWave.cs" />
+     <Compile Include="Assets\_ImportedPackage\BasicBeamShot\Script\BillBoard.cs" />
+     <Compile Include="Assets\_ImportedPackage\BasicBeamShot\Script\Create_MyLineMesh.cs" />
+     <Compile Include="Assets\_ImportedPackage\BasicBeamShot\Script\Flash.cs" />
+     <Compile Include="Assets\_ImportedPackage\BasicBeamShot\Script\GeroBeam.cs" />
+     <Compile Include="Assets\_ImportedPackage\BasicBeamShot\Script\GeroBeamHit.cs" />
+     <Compile Include="Assets\_ImportedPackage\BasicBeamShot\Script\GetColor_BeamLine.cs" />
+     <Compile Include="Assets\_ImportedPackage\BasicBeamShot\Script\GetColor_Flash.cs" />
+     <Compile Include="Assets\_ImportedPackage\BasicBeamShot\Script\GetColor_Particle.cs" />
+     <Compile Include="Assets\_ImportedPackage\BasicBeamShot\Script\JumpScene.cs" />
+     <Compile Include="Assets\_ImportedPackage\BasicBeamShot\Script\MouseTgt.cs" />
+     <Compile Include="Assets\_ImportedPackage\BasicBeamShot\Script\MultiShooter.cs" />
+     <Compile Include="Assets\_ImportedPackage\BasicBeamShot\Script\RandomRotate.cs" />
+     <Compile Include="Assets\_ImportedPackage\BasicBeamShot\Script\ScaleWiggle.cs" />
+     <Compile Include="Assets\_ImportedPackage\BasicBeamShot\Script\SceneMaster.cs" />
+     <Compile Include="Assets\_ImportedPackage\BasicBeamShot\Script\ShooterRotate.cs" />
+     <Compile Include="Assets\_ImportedPackage\BasicBeamShot\Script\ShotBase.cs" />
+     <Compile Include="Assets\_ImportedPackage\BasicBeamShot\Script\ShotParticleEmitter.cs" />
+     <Compile Include="Assets\_ImportedPackage\BasicBeamShot\Script\ShotParticle_Scale.cs" />
+     <Compile Include="Assets\_ImportedPackage\Game Jam Menu Template\Scripts\DontDestroy.cs" />
+     <Compile Include="Assets\_ImportedPackage\Game Jam Menu Template\Scripts\EventSystemChecker.cs" />
+     <Compile Include="Assets\_ImportedPackage\Game Jam Menu Template\Scripts\Pause.cs" />
+     <Compile Include="Assets\_ImportedPackage\Game Jam Menu Template\Scripts\PlayMusic.cs" />
+     <Compile Include="Assets\_ImportedPackage\Game Jam Menu Template\Scripts\QuitApplication.cs" />
+     <Compile Include="Assets\_ImportedPackage\Game Jam Menu Template\Scripts\SetAudioLevels.cs" />
+     <Compile Include="Assets\_ImportedPackage\Game Jam Menu Template\Scripts\ShowPanels.cs" />
+     <Compile Include="Assets\_ImportedPackage\Game Jam Menu Template\Scripts\StartOptions.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Antialiasing.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Bloom.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\BloomAndFlares.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\BloomOptimized.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Blur.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\BlurOptimized.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\CameraMotionBlur.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionCurves.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionLookup.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionRamp.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ContrastEnhance.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ContrastStretch.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\CreaseShading.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\DepthOfField.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\DepthOfFieldDeprecated.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\EdgeDetection.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Fisheye.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\GlobalFog.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Grayscale.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ImageEffectBase.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ImageEffects.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\MotionBlur.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\NoiseAndGrain.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\NoiseAndScratches.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsBase.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsHelper.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Quads.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ScreenOverlay.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ScreenSpaceAmbientObscurance.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ScreenSpaceAmbientOcclusion.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\SepiaTone.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\SunShafts.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\TiltShift.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Tonemapping.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Triangles.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Twirl.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
+     <Compile Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\Accordion\Accordion.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\Accordion\AccordionElement.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\Accordion\Tweening\FloatTween.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\Accordion\Tweening\ITweenValue.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\Accordion\Tweening\TweenRunner.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\BoundTooltip\BoundTooltipItem.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\BoundTooltip\BoundTooltipTrigger.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\ComboBox\AutoCompleteComboBox.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\ComboBox\ComboBox.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\ComboBox\DropDownList.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\ComboBox\DropDownListButton.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\ComboBox\DropDownListItem.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\Effects\BestFitOutline.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\Effects\CurvedText.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\Effects\CylinderText.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\Effects\Gradient.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\Effects\LetterSpacing.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\Effects\NicerOutline.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\Effects\SoftMaskScript.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\Effects\UIFlippable.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\Effects\UIImageCrop.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\HSVPicker\ColorPickerTester.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\HSVPicker\HSVPicker.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\HSVPicker\HSVSliderEvent.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\HSVPicker\HSVUtil.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\HSVPicker\HexRGB.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\HSVPicker\HsvBoxSelector.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\HSVPicker\HsvSliderPicker.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\ImageExtended.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\InputFieldEnterSubmit.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\InputFocus.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\InputModules\AimerInputModule.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\InputModules\GamePadInputModule.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\Layout\FlowLayoutGroup.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\Layout\HorizontalScrollSnap.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\Layout\RadialLayout.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\Layout\ScrollSnap.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\Layout\TileSizeFitter.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\Layout\VerticalScrollSnap.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\Primitives\DiamondGraph.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\Primitives\UICircle.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\Primitives\UICornerCut.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\Primitives\UILineRenderer.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\Primitives\UILineTextureRenderer.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\RaycastMask.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\ReorderableList\ReorderableList.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\ReorderableList\ReorderableListContent.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\ReorderableList\ReorderableListDebug.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\ReorderableList\ReorderableListElement.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\RescalingPanels\RescaleDragPanel.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\RescalingPanels\RescalePanel.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\RescalingPanels\ResizePanel.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\ReturnKeyTriggersButton.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\ScrollRectEx.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\ScrollRectExtensions.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\ScrollRectLinker.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\ScrollRectTweener.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\SelectionBox\ExampleSelectable.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\SelectionBox\IBoxSelectable.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\SelectionBox\SelectionBox.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\TabNavigation.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\ToolTip.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\UIScrollToSelection.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\UIScrollToSelectionXY.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\UISelectableExtension.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\UIWindowBase.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\Utilities\HoverTooltip.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\Utilities\SetPropertyUtility.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\Utilities\switchToRectTransform.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\VR Extensions\VRCursor.cs" />
+     <Compile Include="Assets\_ImportedPackage\unity-ui-extensions\Scripts\VR Extensions\VRInputModule.cs" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+     <None Include="Assets\_ImportedPackage\unity-ui-extensions\Shaders\SoftMaskShaderText.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ShowAlphaChannel.shader" />
+     <None Include="Assets\GoogleVR\Distortion\GvrDistortion.cginc" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\SunShaftsComposite.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurves.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceAmbientObscurance.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
+     <None Include="Assets\Plugins\DOTween\DOTween46.xml" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\VignetteShader.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\info.txt" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\Projectors\Guidelines.txt" />
+     <None Include="Assets\GoogleVR\Legacy\Resources\UnlitTexture.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\MotionBlur.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
+     <None Include="Assets\Plugins\DOTween\readme.txt" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\MinMaxReduction.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\RadialBlur.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ContrastComposite.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
+     <None Include="Assets\_ImportedPackage\CrystalPack\Shaders\S_Crystal.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\FisheyeShader.shader" />
+     <None Include="Assets\_ImportedPackage\BasicBeamShot\sh\Add_UVScroll_sh.shader" />
+     <None Include="Assets\_ImportedPackage\unity-ui-extensions\Shaders\SoftMaskShader.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
+     <None Include="Assets\_ImportedPackage\PB_Spider\readme.txt" />
+     <None Include="Assets\Plugins\DOTween\DOTween50.xml" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\frag_ao.cginc" />
+     <None Include="Assets\_ImportedPackage\BasicBeamShot\HowToUse_JP.txt" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
+     <None Include="Assets\Plugins\DOTween\DOTween43.xml" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\SSAOShader.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ConvertDepth.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
+     <None Include="Assets\_ImportedPackage\BasicBeamShot\sh\Sprite_Add_sh.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderYUV.shader" />
+     <None Include="Assets\_ImportedPackage\BasicBeamShot\sh\GeroBeam_sh.shader" />
+     <None Include="Assets\_ImportedPackage\BasicBeamShot\sh\BeamLine_sh.shader" />
+     <None Include="Assets\_ImportedPackage\unity-ui-extensions\Shaders\UIImageCrop.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\CreaseApply.shader" />
+     <None Include="Assets\_ImportedPackage\Game Jam Menu Template\Fonts\OpenSans\License!.txt" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\GlobalFog.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Luminance.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionSelective.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\Bokeh34.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlur.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrainDX11.shader" />
+     <None Include="Assets\Credits.txt" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableBlur.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\MotionBlurClear.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionEffect.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\GrayscaleEffect.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\SepiaToneEffect.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\TwirlEffect.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\VortexEffect.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Adaptation.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrain.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\VignettingShader.shader" />
+     <None Include="Assets\GoogleVR\Resources\UI\GvrReticleShader.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\EdgeDetectNormals.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\PrepareSunShaftsBlur.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
+     <None Include="Assets\_ImportedPackage\BasicBeamShot\sh\AddColor_sh.shader" />
+     <None Include="Assets\GoogleVR\Legacy\Resources\SolidColor.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\SimpleClear.shader" />
+     <None Include="Assets\_ImportedPackage\Game Jam Menu Template\GameJamTemplateReadMe.txt" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
+     <None Include="Assets\_ImportedPackage\BasicBeamShot\HowToUse_EN.txt" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
+     <None Include="Assets\_ImportedPackage\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.ProtocolBuffers">
+ <HintPath>C:/Users/Leonard Yap/Desktop/QRays v2.4/QRays/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>C:/Users/Leonard Yap/Desktop/QRays v2.4/QRays/Assets/Plugins/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween43">
+ <HintPath>C:/Users/Leonard Yap/Desktop/QRays v2.4/QRays/Assets/Plugins/DOTween/DOTween43.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween46">
+ <HintPath>C:/Users/Leonard Yap/Desktop/QRays v2.4/QRays/Assets/Plugins/DOTween/DOTween46.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween50">
+ <HintPath>C:/Users/Leonard Yap/Desktop/QRays v2.4/QRays/Assets/Plugins/DOTween/DOTween50.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
